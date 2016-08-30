@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-dbcp:commons-dbcp:20030825.184428'
+    compile 'mysql:mysql-connector-java:6.0.3'
+    compile 'com.github.spullara.mustache.java:mustache.java:0.9.3'
+}
+
+jar {
+    baseName = 'todomvc'
+    version =  '0.1.0'
+}
